@@ -27,7 +27,7 @@
 module attosoc (
 	input clk,
 	input reset_n,
-	output reg [7:0] led,
+	output reg [3:0] led,
 	output uart_tx,
 	input uart_rx
 );
@@ -42,7 +42,7 @@ module attosoc (
 			reset_cnt <= reset_cnt + !resetn;
 	end
 
-	parameter integer MEM_WORDS = 8192;
+	parameter integer MEM_WORDS = 3584;
 	parameter [31:0] STACKADDR = 32'h 0000_0000 + (4*MEM_WORDS);       // end of memory
 	parameter [31:0] PROGADDR_RESET = 32'h 0000_0000;       // start of memory
 

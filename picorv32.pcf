@@ -1,0 +1,9 @@
+set_io clk100  129 # Onboard 100Mhz oscillator
+set_io btn[0]   63 # Push Button 1
+set_io btn[1]   64 # Push Button 2
+set_io led[0]   70 # LD1
+set_io led[1]   68 # LD2
+set_io led[2]   67 # LD3
+set_io led[3]   71 # LD4
+set_io ftdi_rxd  7 # 85 (internal serial not working?
+set_io ftdi_txd  8 # 88  had to switch to external)
